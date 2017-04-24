@@ -14,14 +14,6 @@ type EventCallback struct {
 	Challenge   *string  `json:"challenge"`
 }
 
-type Msg struct {
-	Type      string `json:"type"`
-	User      string `json:"user"`
-	Channel   string `json:"channel"`
-	Text      string `json:"text"`
-	TimeStamp string `json:"ts"`
-}
-
 type EventMsg struct {
 	EventCallback
 	Event Msg `json:"event"`
